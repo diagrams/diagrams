@@ -1,0 +1,18 @@
+Name:                diagrams
+Version:             0.3
+Synopsis:            Embedded domain-specific language for declarative vector graphics
+Description:         Diagrams is an embedded domain-specific langauge for
+                     declarative vector graphics.  This package is
+                     just a wrapper that depends on the diagrams-core,
+                     diagrams-lib, and diagrams-cairo packages.
+Homepage:            http://projects.haskell.org/diagrams
+License:             BSD3
+License-file:        LICENSE
+Author:              Brent Yorgey
+Maintainer:          byorgey@cis.upenn.edu
+Category:            Graphics
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Library
+  Build-depends:     diagrams-core, diagrams-lib, diagrams-cairo
