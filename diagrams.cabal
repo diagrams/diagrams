@@ -1,5 +1,5 @@
 Name:                diagrams
-Version:             0.3
+Version:             0.4
 Synopsis:            Embedded domain-specific language for declarative vector graphics
 Description:         Diagrams is an embedded domain-specific langauge for
                      declarative vector graphics.  This package is
@@ -15,4 +15,6 @@ Build-type:          Simple
 Cabal-version:       >=1.2
 
 Library
-  Build-depends:     diagrams-core, diagrams-lib, diagrams-cairo
+  Build-depends:     diagrams-core >= 0.4 && < 0.5,
+                     diagrams-lib >= 0.4 && < 0.5,
+                     diagrams-cairo >= 0.4 && < 0.5
