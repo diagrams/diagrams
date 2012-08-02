@@ -1,10 +1,28 @@
 Name:                diagrams
 Version:             0.5
 Synopsis:            Embedded domain-specific language for declarative vector graphics
-Description:         Diagrams is an embedded domain-specific langauge for
-                     declarative vector graphics.  This package is
-                     just a wrapper that depends on the diagrams-core,
-                     diagrams-lib, and diagrams-cairo packages.
+Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
+                     declarative vector graphics and animations.
+                     .
+                     This package is just *a convenient wrapper*
+                     around the
+                     [diagrams-core](http://hackage.haskell.org/package/diagrams-core),
+                     [diagrams-lib](http://hackage.haskell.org/package/diagrams-lib),
+                     [diagrams-cairo](http://hackage.haskell.org/package/diagrams-cairo),
+                     and
+                     [diagrams-contrib](http://hackage.haskell.org/package/diagrams-contrib)
+                     packages, so they can be installed with a single
+                     `cabal install diagrams` command.  You can
+                     install the packages separately if, say, you want
+                     a different backend.
+                     .
+                     For more information, including a gallery of
+                     examples, tutorial, and user manual, see the
+                     [diagrams
+                     website](http://projects.haskell.org/diagrams).
+                     For help, join the `#diagrams` IRC channel on
+                     Freenode or the [mailing
+                     list](http://groups.google.com/group/diagrams-discuss).
 Homepage:            http://projects.haskell.org/diagrams
 License:             BSD3
 License-file:        LICENSE
@@ -17,4 +35,5 @@ Cabal-version:       >=1.2
 Library
   Build-depends:     diagrams-core >= 0.5 && < 0.6,
                      diagrams-lib >= 0.5 && < 0.6,
-                     diagrams-cairo >= 0.5 && < 0.6
+                     diagrams-cairo >= 0.5 && < 0.6,
+                     diagrams-contrib >= 0.1 && < 0.2
