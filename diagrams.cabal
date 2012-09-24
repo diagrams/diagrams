@@ -27,13 +27,19 @@ Homepage:            http://projects.haskell.org/diagrams
 License:             BSD3
 License-file:        LICENSE
 Author:              Brent Yorgey
-Maintainer:          byorgey@cis.upenn.edu
+Maintainer:          diagrams-discuss@googlegroups.com
 Category:            Graphics
 Build-type:          Simple
-Cabal-version:       >=1.2
+Cabal-version:       >=1.10
+
+Source-repository head
+  type:     git
+  location: git://github.com/diagrams/diagrams.git
 
 Library
   Build-depends:     diagrams-core >= 0.5 && < 0.6,
                      diagrams-lib >= 0.5 && < 0.6,
                      diagrams-cairo >= 0.5 && < 0.6,
-                     diagrams-contrib >= 0.1 && < 0.2
+                     diagrams-contrib >= 0.2 && < 0.3
+
+  Default-language:  Haskell2010
