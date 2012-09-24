@@ -40,6 +40,6 @@ Library
   Build-depends:     diagrams-core >= 0.5 && < 0.6,
                      diagrams-lib >= 0.5 && < 0.6,
                      diagrams-cairo >= 0.5 && < 0.6,
-                     diagrams-contrib >= 0.2 && < 0.3
+                     diagrams-contrib >= 0.1 && < 0.3
 
   Default-language:  Haskell2010
