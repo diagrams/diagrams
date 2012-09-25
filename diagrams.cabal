@@ -43,10 +43,23 @@ Source-repository head
   type:     git
   location: git://github.com/diagrams/diagrams.git
 
+Flag cairo
+  Description: Enable the cairo backend
+  Default: True
+  
+Flag svg
+  Description: Enable the Haskell-native SVG backend (experimental)
+  Default: False
+
 Library
   Build-depends:     diagrams-core >= 0.5 && < 0.6,
                      diagrams-lib >= 0.5 && < 0.6,
-                     diagrams-cairo >= 0.5 && < 0.6,
-                     diagrams-contrib >= 0.1 && < 0.3
+                     diagrams-contrib >= 0.2 && < 0.3
+
+  if flag(cairo)
+    Build-depends:   diagrams-cairo >= 0.5 && < 0.6
+
+  if flag(svg)
+    Build-depends:   diagrams-svg >= 0.3.7 && < 0.4
 
   Default-language:  Haskell2010
