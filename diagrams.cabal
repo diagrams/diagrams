@@ -28,6 +28,7 @@ License:             BSD3
 License-file:        LICENSE
 Author:              Brent Yorgey
 Maintainer:          diagrams-discuss@googlegroups.com
+Bug-reports:         http://github.com/diagrams/diagrams/issues
 Category:            Graphics
 Build-type:          Simple
 Cabal-version:       >=1.10
