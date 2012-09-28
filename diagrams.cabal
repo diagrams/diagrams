@@ -4,25 +4,31 @@ Synopsis:            Embedded domain-specific language for declarative vector gr
 Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
                      declarative vector graphics and animations.
                      .
-                     This package is just *a convenient wrapper*
-                     around the
-                     [diagrams-core](http://hackage.haskell.org/package/diagrams-core),
-                     [diagrams-lib](http://hackage.haskell.org/package/diagrams-lib),
-                     [diagrams-cairo](http://hackage.haskell.org/package/diagrams-cairo),
-                     and
-                     [diagrams-contrib](http://hackage.haskell.org/package/diagrams-contrib)
-                     packages, so they can be installed with a single
-                     `cabal install diagrams` command.  You can
-                     install the packages separately if, say, you want
-                     a different backend.
+                     This package is just a convenient wrapper
+                     around the @diagrams-core@, @diagrams-lib@ and
+                     @diagrams-contrib@ packages, so they can be
+                     installed with a single `cabal install diagrams`
+                     command.
+                     .
+                     The package also comes with flags to enable two
+                     different backends.  The cairo/gtk
+                     backend (the @diagrams-cairo@ package)
+                     can be selected with the @-fcairo@ flag.  This
+                     flag is enabled by default, so if you do /not/
+                     want the cairo/gtk backend, you must explicitly
+                     disable it with @-f-cairo@.
+                     . 
+                     There is also an experimental native SVG
+                     backend (the @diagrams-svg@ package)
+                     which can be enabled with @-fsvg@.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
-                     [diagrams
-                     website](http://projects.haskell.org/diagrams).
-                     For help, join the `#diagrams` IRC channel on
-                     Freenode or the [mailing
-                     list](http://groups.google.com/group/diagrams-discuss).
+                     diagrams website:
+                     <http://projects.haskell.org/diagrams>.  For
+                     help, join the @#diagrams@ IRC channel on
+                     Freenode or the mailing list:
+                     <http://groups.google.com/group/diagrams-discuss>.
 Homepage:            http://projects.haskell.org/diagrams
 License:             BSD3
 License-file:        LICENSE
