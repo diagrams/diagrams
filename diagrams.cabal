@@ -46,10 +46,12 @@ Source-repository head
 Flag cairo
   Description: Enable the cairo backend
   Default: True
+  Manual:  True
   
 Flag svg
   Description: Enable the Haskell-native SVG backend (experimental)
   Default: False
+  Manual:  True
 
 Library
   Build-depends:     diagrams-core >= 0.6 && < 0.7,
