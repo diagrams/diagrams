@@ -11,16 +11,26 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      command.
                      .
                      The package also comes with flags to enable two
-                     different backends.  The cairo/gtk
-                     backend (the @diagrams-cairo@ package)
-                     can be selected with the @-fcairo@ flag.  This
-                     flag is enabled by default, so if you do /not/
-                     want the cairo/gtk backend, you must explicitly
-                     disable it with @-f-cairo@.
-                     . 
-                     There is also an experimental native SVG
+                     different backends.
+                     A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
-                     which can be enabled with @-fsvg@.
+                     can be selected with @-fsvg@. This
+                     flag is enabled by default, so if you do /not/
+                     want the SVG backend, you must explicitly
+                     disable it with @-f-svg@.  The SVG backend does not
+                     yet quite support all the features of the cairo
+                     backend: text alignment and embedded images are
+                     the two main missing features at this point, and
+                     of course it can only produce SVG images. It is,
+                     however, much easier to install, so it is the
+                     out-of-the-box default.
+                     .
+		     There is also a cairo backend (the
+                     @diagrams-cairo@ package) which can be selected
+                     with the @-fcairo@ flag. It is fully-featured and
+                     can produce PNG, PS, PDF, or SVG output; however,
+                     due to its dependencies it can be difficult to
+                     install on some platforms (notably OS X).
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -45,12 +55,12 @@ Source-repository head
 
 Flag cairo
   Description: Enable the cairo backend
-  Default: True
-  Manual:  True
-  
-Flag svg
-  Description: Enable the Haskell-native SVG backend (experimental)
   Default: False
+  Manual:  True
+
+Flag svg
+  Description: Enable the Haskell-native SVG backend
+  Default: True
   Manual:  True
 
 Library
