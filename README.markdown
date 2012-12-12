@@ -16,25 +16,23 @@ they can be installed with a single `cabal install diagrams` command.
 [diagrams-contrib]: http://github.com/diagrams/diagrams-contrib
 
 The package also comes with flags to enable two different backends.
-The [cairo/gtk backend](http://github.com/diagrams/diagrams-cairo) can be
-selected with the `-fcairo` flag.  This flag is enabled by default, so
-if you do *not* want the cairo/gtk backend, you must explicitly
-disable it with `-f-cairo`.
+The [native SVG backend](http://github.com/diagrams/diagrams-svg) is
+enabled by the `-fsvg` flag and is enabled by default.  If you don't
+want it, you must explicitly disable it with `-f-svg`.
 
-There is also an experimental
-[native SVG backend](http://github.com/diagrams/diagrams-svg)
-(disabled by default), which can be enabled with `-fsvg`.
+The [cairo/gtk backend](http://github.com/diagrams/diagrams-cairo) is
+disabled by default but can be selected with the `-fcairo` flag.
 
 # Installation
 
 ```
-cabal update && cabal install gtk2hs-buildtools && cabal install diagrams
+cabal update && cabal install diagrams
 ```
 
-or, to get the SVG backend and not the cairo backend:
+or, to get the cairo backend in addition to the SVG backend
 
 ```
-cabal update && cabal install -f-cairo -fsvg diagrams
+cabal update && cabal install gtk2hs-buildtools && cabal install -fcairo diagrams
 ```
 
 # Reporting bugs
@@ -54,6 +52,3 @@ user manual, see the
 [diagrams website](http://projects.haskell.org/diagrams).  For help,
 join the `#diagrams` IRC channel on Freenode or the
 [mailing list](http://groups.google.com/group/diagrams-discuss).
-
-
-
