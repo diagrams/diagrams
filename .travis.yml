@@ -3,3 +3,10 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq libgtk-3-dev libcairo2-dev 
   - cabal install gtk2hs-buildtools
+notifications:
+  irc:
+    channels:
+      - irc.freenode.org#diagrams
+    skip_join: true
+    template:
+      - "\x0313diagrams\x03/\x0306%{branch}\x03 \x0314%{commit}\x03 %{build_url} %{message}"
