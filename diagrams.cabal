@@ -65,7 +65,8 @@ Flag svg
   Manual:  True
 
 Library
-  Build-depends:     diagrams-core >= 0.6 && < 0.7,
+  Build-depends:     base < 10,
+                     diagrams-core >= 0.6 && < 0.7,
                      diagrams-lib >= 0.6 && < 0.7,
                      diagrams-contrib >= 0.6 && < 0.7
 
@@ -76,3 +77,8 @@ Library
     Build-depends:   diagrams-svg >= 0.6 && < 0.7
 
   Default-language:  Haskell2010
+
+  -- This convinces cabal and GHC 7.6 to build the
+  -- libHSdiagrams.0.6.a for later linking even though
+  -- it doesn't have any contents.
+  Other-modules: Paths_diagrams
