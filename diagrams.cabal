@@ -1,5 +1,5 @@
 Name:                diagrams
-Version:             0.6
+Version:             0.7
 Synopsis:            Embedded domain-specific language for declarative vector graphics
 Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
                      declarative vector graphics and animations.
@@ -75,15 +75,15 @@ Flag ps
   Manual: True
 
 Library
-  Build-depends:     diagrams-core >= 0.6 && < 0.7,
-                     diagrams-lib >= 0.6 && < 0.7,
-                     diagrams-contrib >= 0.6 && < 0.7
+  Build-depends:     diagrams-core >= 0.7 && < 0.8,
+                     diagrams-lib >= 0.7 && < 0.8,
+                     diagrams-contrib >= 0.7 && < 0.8
 
   if flag(cairo)
-    Build-depends:   diagrams-cairo >= 0.6 && < 0.7
+    Build-depends:   diagrams-cairo >= 0.7 && < 0.8
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 0.6 && < 0.7
+    Build-depends:   diagrams-svg >= 0.7 && < 0.8
 
   if flag(ps)
     Build-depends:   diagrams-postscript >= 0.7 && < 0.8
