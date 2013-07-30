@@ -10,7 +10,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      installed with a single `cabal install diagrams`
                      command.
                      .
-                     The package also comes with flags to enable two
+                     The package also comes with flags to enable three
                      different backends.
                      A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
@@ -31,6 +31,11 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      can produce PNG, PS, PDF, or SVG output; however,
                      due to its dependencies it can be difficult to
                      install on some platforms (notably OS X).
+                     .
+                     Finally, there is a Haskell-native postscript
+                     backend (the @diagrams-postscript@ package) which
+                     can be selected with the @-fps@ flag.  The only
+                     feature it does not support is transparency.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -64,6 +69,11 @@ Flag svg
   Default: True
   Manual:  True
 
+Flag ps
+  Description: Enable the Haskell-native PostScript backend
+  Default: False
+  Manual: True
+
 Library
   Build-depends:     diagrams-core >= 0.6 && < 0.7,
                      diagrams-lib >= 0.6 && < 0.7,
@@ -74,5 +84,8 @@ Library
 
   if flag(svg)
     Build-depends:   diagrams-svg >= 0.6 && < 0.7
+
+  if flag(ps)
+    Build-depends:   diagrams-postscript >= 0.7 && < 0.8
 
   Default-language:  Haskell2010
