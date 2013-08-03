@@ -15,10 +15,14 @@ they can be installed with a single `cabal install diagrams` command.
 [diagrams-lib]: http://github.com/diagrams/diagrams-lib
 [diagrams-contrib]: http://github.com/diagrams/diagrams-contrib
 
-The package also comes with flags to enable two different backends.
+The package also comes with flags to enable three different backends.
 The [native SVG backend](http://github.com/diagrams/diagrams-svg) is
 enabled by the `-fsvg` flag and is enabled by default.  If you don't
 want it, you must explicitly disable it with `-f-svg`.
+
+The
+[native postscript backend](http://github.com/diagrams/diagrams-postscript)
+is disabled by default but can be enabled by the `-fps` flag.
 
 The [cairo/gtk backend](http://github.com/diagrams/diagrams-cairo) is
 disabled by default but can be selected with the `-fcairo` flag.
@@ -29,7 +33,13 @@ disabled by default but can be selected with the `-fcairo` flag.
 cabal update && cabal install diagrams
 ```
 
-or, to get the cairo backend in addition to the SVG backend
+or, to get the postscript backend in addition to the SVG backend:
+
+```
+cabal update && cabal install -fps diagrams
+```
+
+or, to get the cairo backend in addition to the SVG backend:
 
 ```
 cabal update && cabal install gtk2hs-buildtools && cabal install -fcairo diagrams
