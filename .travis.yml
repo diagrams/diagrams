@@ -4,6 +4,7 @@ before_install:
   - sudo apt-get install -qq libgtk-3-dev libcairo2-dev 
   - cabal install gtk2hs-buildtools
 notifications:
+  email: false
   irc:
     channels:
       - irc.freenode.org#diagrams
