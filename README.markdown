@@ -8,14 +8,16 @@ animations.
 [haskell]: http://www.haskell.org/haskellwiki/Haskell
 
 This package is just *a convenient wrapper* around the
-[diagrams-core], [diagrams-lib], and [diagrams-contrib] packages, so
-they can be installed with a single `cabal install diagrams` command.
+[diagrams-core], [diagrams-lib], [diagrams-svg], and
+[diagrams-contrib] packages, so they can be installed with a single
+`cabal install diagrams` command.
 
 [diagrams-core]: http://github.com/diagrams/diagrams-core
 [diagrams-lib]: http://github.com/diagrams/diagrams-lib
+[diagrams-svg]: http://github.com/diagrams/diagrams-svg
 [diagrams-contrib]: http://github.com/diagrams/diagrams-contrib
 
-The package also comes with flags to enable three different backends.
+The package also comes with flags to enable four different backends.
 The [native SVG backend](http://github.com/diagrams/diagrams-svg) is
 enabled by the `-fsvg` flag and is enabled by default.  If you don't
 want it, you must explicitly disable it with `-f-svg`.
@@ -24,8 +26,12 @@ The
 [native postscript backend](http://github.com/diagrams/diagrams-postscript)
 is disabled by default but can be enabled by the `-fps` flag.
 
-The [cairo/gtk backend](http://github.com/diagrams/diagrams-cairo) is
-disabled by default but can be selected with the `-fcairo` flag.
+The [cairo backend](http://github.com/diagrams/diagrams-cairo) is
+disabled by default but can be selected with the `-fcairo` flag.  In
+addition, the [GTK backend](http://github.com/diagrams/diagrams-gtk)
+is based on the cairo backend (but split into a separate package to
+make installing the cairo backend easier).  It can be selected with
+the `fgtk` flag.
 
 # Installation
 

@@ -10,7 +10,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      installed with a single `cabal install diagrams`
                      command.
                      .
-                     The package also comes with flags to enable three
+                     The package also comes with flags to enable four
                      different backends.
                      A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
@@ -25,12 +25,16 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      however, much easier to install, so it is the
                      out-of-the-box default.
                      .
-		     There is also a cairo backend (the
+                     There is also a cairo backend (the
                      @diagrams-cairo@ package) which can be selected
                      with the @-fcairo@ flag. It is fully-featured and
                      can produce PNG, PS, PDF, or SVG output; however,
                      due to its dependencies it can be difficult to
                      install on some platforms (notably OS X).
+                     .
+                     In addition, there is a GTK backend based on the
+                     cairo backend, for rendering diagrams directly to
+                     GTK windows. You can enable it with the @-fgtk@ flag.
                      .
                      Finally, there is a Haskell-native postscript
                      backend (the @diagrams-postscript@ package) which
@@ -64,6 +68,11 @@ Flag cairo
   Default: False
   Manual:  True
 
+Flag gtk
+  Description: Enable the GTK backend
+  Default: False
+  Manual:  True
+
 Flag svg
   Description: Enable the Haskell-native SVG backend
   Default: True
@@ -81,6 +90,9 @@ Library
 
   if flag(cairo)
     Build-depends:   diagrams-cairo >= 0.7 && < 0.8
+
+  if flag(gtk)
+    Build-depends:   diagrams-gtk >= 0.6.0.1 && < 0.7
 
   if flag(svg)
     Build-depends:   diagrams-svg >= 0.7 && < 0.8
