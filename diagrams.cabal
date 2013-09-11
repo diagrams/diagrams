@@ -1,5 +1,5 @@
 Name:                diagrams
-Version:             0.7.1
+Version:             0.7.1.1
 Synopsis:            Embedded domain-specific language for declarative vector graphics
 Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
                      declarative vector graphics and animations.
