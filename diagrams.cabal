@@ -95,7 +95,7 @@ Library
     Build-depends:   diagrams-gtk >= 0.6.0.1 && < 0.7
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 0.7 && < 0.8
+    Build-depends:   diagrams-svg >= 0.7 && < 0.9
 
   if flag(ps)
     Build-depends:   diagrams-postscript >= 0.7 && < 0.8
