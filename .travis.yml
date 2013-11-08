@@ -1,12 +1,32 @@
 language: haskell
+
+env:
+  matrix:
+    - HPVER=2012.4.0.0
+    - HPVER=2013.2.0.0
+    - GHCVER=7.4.2
+    - GHCVER=7.6.3
+    - GHCVER=head
+  global:
+    - CABALVER=1.16
+    - UBUNTU_PKGS="libgtk-3-dev libcairo2-dev"
+    - EXTRA_DEPS_PRE="gtk2hs-buildtools"
+    - EXTRA_DEPS=""
+    - CABAL_FLAGS="-fsvg -fps -fcairo -fgtk"
+
+matrix:
+  allow_failures:
+    - env: GHCVER=head
+
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq libgtk-3-dev libcairo2-dev
-  - cabal install gtk2hs-buildtools
-install:
-  - cabal install --only-dependencies --enable-tests -fsvg -fps -fcairo -fgtk
-script:
-  - cabal configure --enable-tests -fsvg -fps -fcairo -fgtk && cabal build && cabal test
+  - git clone http://github.com/diagrams/diagrams-travis travis
+  - source travis/scripts/set_env.sh
+  - ./travis/scripts/before_install.sh
+
+install: ./travis/scripts/install.sh
+
+script: ./travis/scripts/script.sh
+
 notifications:
   email: false
   irc:
