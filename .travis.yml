@@ -13,6 +13,7 @@ env:
     - EXTRA_DEPS_PRE="gtk2hs-buildtools"
     - EXTRA_DEPS=""
     - CABAL_FLAGS="-fsvg -fps -fcairo -fgtk"
+    - SKIP_HADDOCK=1
 
 matrix:
   allow_failures:
