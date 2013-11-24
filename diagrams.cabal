@@ -7,7 +7,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      This package is just a convenient wrapper
                      around the @diagrams-core@, @diagrams-lib@ and
                      @diagrams-contrib@ packages, so they can be
-                     installed with a single `cabal install diagrams`
+                     installed with a single @cabal install diagrams@
                      command.
                      .
                      The package also comes with flags to enable four
