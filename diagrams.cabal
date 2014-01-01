@@ -86,7 +86,7 @@ Flag ps
 Library
   Build-depends:     diagrams-core >= 1.0 && < 1.1,
                      diagrams-lib >= 1.0 && < 1.1,
-                     diagrams-contrib >= 1.0 && < 1.1
+                     diagrams-contrib >= 1.0 && < 1.2
 
   if flag(cairo)
     Build-depends:   diagrams-cairo >= 1.0 && < 1.1
