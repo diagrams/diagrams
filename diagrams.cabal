@@ -1,5 +1,5 @@
 Name:                diagrams
-Version:             1.0.0.1
+Version:             1.1
 Synopsis:            Embedded domain-specific language for declarative vector graphics
 Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
                      declarative vector graphics and animations.
@@ -84,20 +84,20 @@ Flag ps
   Manual: True
 
 Library
-  Build-depends:     diagrams-core >= 1.0 && < 1.1,
-                     diagrams-lib >= 1.0 && < 1.1,
+  Build-depends:     diagrams-core >= 1.1 && < 1.2,
+                     diagrams-lib >= 1.1 && < 1.2,
                      diagrams-contrib >= 1.0 && < 1.2
 
   if flag(cairo)
-    Build-depends:   diagrams-cairo >= 1.0 && < 1.1
+    Build-depends:   diagrams-cairo >= 1.1 && < 1.2
 
   if flag(gtk)
-    Build-depends:   diagrams-gtk >= 1.0 && < 1.1
+    Build-depends:   diagrams-gtk >= 1.0.1 && < 1.1
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 1.0 && < 1.1
+    Build-depends:   diagrams-svg >= 1.0.1.4 && < 1.1
 
   if flag(ps)
-    Build-depends:   diagrams-postscript >= 1.0 && < 1.1
+    Build-depends:   diagrams-postscript >= 1.1 && < 1.2
 
   Default-language:  Haskell2010
