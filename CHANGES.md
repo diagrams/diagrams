@@ -1,5 +1,5 @@
-1.1 (XXX)
----------
+1.1 (8 March 2014)
+------------------
 
 - `diagrams-core-1.1`
 - `diagrams-lib-1.1`
@@ -7,4 +7,4 @@
 - `diagrams-postscript-1.1`
 - `diagrams-cairo-1.1`
 - `diagrams-gtk-1.0.1`
-- `diagrams-contrib-?`
+- `diagrams-contrib-1.1.1`
