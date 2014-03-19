@@ -99,6 +99,6 @@ Library
     Build-depends:   diagrams-svg >= 1.0.1.4 && < 1.1
 
   if flag(ps)
-    Build-depends:   diagrams-postscript >= 1.1 && < 1.2
+    Build-depends:   diagrams-postscript >= 1.0.2 && < 1.1
 
   Default-language:  Haskell2010
