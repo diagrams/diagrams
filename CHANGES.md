@@ -1,3 +1,8 @@
+1.1.0.1 (19 March 2014)
+-----------------------
+
+- depend on `diagrams-postscript-1.0.2`, which actually exists (unlike `1.1`)
+
 1.1 (8 March 2014)
 ------------------
 
