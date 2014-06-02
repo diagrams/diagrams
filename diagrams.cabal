@@ -1,5 +1,5 @@
 Name:                diagrams
-Version:             1.1.0.2
+Version:             1.2
 Synopsis:            Embedded domain-specific language for declarative vector graphics
 Description:         Diagrams is a full-featured framework and embedded domain-specific langauge for creating
                      declarative vector graphics and animations.
@@ -28,7 +28,8 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      There is also a cairo backend (the
                      @diagrams-cairo@ package) which can be selected
                      with the @-fcairo@ flag. It is fully-featured and
-                     can produce PNG, PS, PDF, or SVG output; however,
+                     can produce PNG, PS, PDF, SVG, or animated
+                     GIF output; however,
                      due to its dependencies it can be difficult to
                      install on some platforms (notably OS X).
                      .
@@ -36,10 +37,16 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      cairo backend, for rendering diagrams directly to
                      GTK windows. You can enable it with the @-fgtk@ flag.
                      .
-                     Finally, there is a Haskell-native postscript
+                     The Haskell-native postscript
                      backend (the @diagrams-postscript@ package) which
                      can be selected with the @-fps@ flag.  The only
                      feature it does not support is transparency.
+                     .
+                     Finally there is a Rasterific backend which is
+                     also Haskell-native (the @diagrams-rasterific@
+                     package) which can be selected with the @-frasterific@
+                     flag. This is a fully featured backend with the ability
+                     to produce PNG, JPG, TIFF, BMP and animated GIF output.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -84,6 +91,11 @@ Flag ps
   Default: False
   Manual: True
 
+Flag rasterific
+  Description: Enable the Haskell-native Rasterific backend
+  Default: False
+  Manual: True
+
 Library
   Build-depends:     diagrams-core >= 1.2 && < 1.3,
                      diagrams-lib >= 1.2 && < 1.3,
@@ -99,6 +111,9 @@ Library
     Build-depends:   diagrams-svg >= 1.0.1.4 && < 1.2
 
   if flag(ps)
-    Build-depends:   diagrams-postscript >= 1.0.2 && < 1.1
+    Build-depends:   diagrams-postscript >= 1.0.2 && < 1.2
+
+  if flag(rasterific)
+    Build-depends:   diagrams-rasterific >= 0.1 && < 0.2
 
   Default-language:  Haskell2010

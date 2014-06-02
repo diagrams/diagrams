@@ -1,7 +1,7 @@
 Copyright (c) 2011-2014, diagrams team (see LICENSE files in
 dual-tree, monoid-extras, diagrams-core, diagrams-lib, diagrams-svg,
-diagrams-postscript, diagrams-cairo, diagrams-gtk, and
-diagrams-contrib packages)
+diagrams-postscript, diagrams-cairo, diagrams-gtk, diagrams-rasterific, 
+and diagrams-contrib packages)
 
 All rights reserved.
 
