@@ -38,7 +38,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      GTK windows. You can enable it with the @-fgtk@ flag.
                      .
                      The Haskell-native postscript
-                     backend (the @diagrams-postscript@ package) which
+                     backend (the @diagrams-postscript@ package)
                      can be selected with the @-fps@ flag.  The only
                      feature it does not support is transparency.
                      .
