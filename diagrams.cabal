@@ -10,7 +10,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      installed with a single @cabal install diagrams@
                      command.
                      .
-                     The package also comes with flags to enable four
+                     The package also comes with flags to enable five
                      different backends.
                      A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
