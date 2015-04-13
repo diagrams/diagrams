@@ -102,23 +102,23 @@ Flag rasterific
   Manual: True
 
 Library
-  Build-depends:     diagrams-core >= 1.2 && < 1.3,
-                     diagrams-lib >= 1.2 && < 1.3,
-                     diagrams-contrib >= 1.0 && < 1.2
+  Build-depends:     diagrams-core >= 1.3 && < 1.4,
+                     diagrams-lib >= 1.3 && < 1.4,
+                     diagrams-contrib >= 1.3 && < 1.4
 
   if flag(cairo)
-    Build-depends:   diagrams-cairo >= 1.2 && < 1.3
+    Build-depends:   diagrams-cairo >= 1.3 && < 1.4
 
   if flag(gtk)
-    Build-depends:   diagrams-gtk >= 1.0.1 && < 1.1
+    Build-depends:   diagrams-gtk >= 1.3 && < 1.4
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 1.0.1.4 && < 1.2
+    Build-depends:   diagrams-svg >= 1.3 && < 1.4
 
   if flag(ps) || flag(postscript)
-    Build-depends:   diagrams-postscript >= 1.0.2 && < 1.2
+    Build-depends:   diagrams-postscript >= 1.3 && < 1.4
 
   if flag(rasterific)
-    Build-depends:   diagrams-rasterific >= 0.1 && < 0.2
+    Build-depends:   diagrams-rasterific >= 1.3 && < 1.4
 
   Default-language:  Haskell2010
