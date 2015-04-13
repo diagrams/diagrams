@@ -39,10 +39,10 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      .
                      The Haskell-native postscript
                      backend (the @diagrams-postscript@ package)
-                     can be selected with the @-fps@ flag.  The only
+                     can be selected with the @-fpostscript@ flag.  The only
                      feature it does not support is transparency.
                      .
-                     Finally there is a Rasterific backend which is
+                     Finally, there is a Rasterific backend which is
                      also Haskell-native (the @diagrams-rasterific@
                      package) which can be selected with the @-frasterific@
                      flag. This is a fully featured backend with the ability
