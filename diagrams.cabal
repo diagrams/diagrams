@@ -91,6 +91,11 @@ Flag ps
   Default: False
   Manual: True
 
+Flag postscript
+  Description: Enable the Haskell-native PostScript backend
+  Default: False
+  Manual: True
+
 Flag rasterific
   Description: Enable the Haskell-native Rasterific backend
   Default: False
@@ -110,7 +115,7 @@ Library
   if flag(svg)
     Build-depends:   diagrams-svg >= 1.0.1.4 && < 1.2
 
-  if flag(ps)
+  if flag(ps) || flag(postscript)
     Build-depends:   diagrams-postscript >= 1.0.2 && < 1.2
 
   if flag(rasterific)
