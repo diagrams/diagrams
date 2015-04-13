@@ -17,7 +17,7 @@ This package is just *a convenient wrapper* around the
 [diagrams-svg]: http://github.com/diagrams/diagrams-svg
 [diagrams-contrib]: http://github.com/diagrams/diagrams-contrib
 
-The package also comes with flags to enable four different backends.
+The package also comes with flags to enable six different backends.
 The [native SVG backend](http://github.com/diagrams/diagrams-svg) is
 enabled by the `-fsvg` flag and is enabled by default.  If you don't
 want it, you must explicitly disable it with `-f-svg`.
@@ -32,6 +32,12 @@ addition, the [GTK backend](http://github.com/diagrams/diagrams-gtk)
 is based on the cairo backend (but split into a separate package to
 make installing the cairo backend easier).  It can be selected with
 the `fgtk` flag.
+
+The [native rasterific backend](http://github.com/diagrams/diagrams-rasterific) which is
+disabled by default but can be selected with the `-frasterific` flag.
+
+The [native canvas backend](http://github.com/diagrams/diagrams-canvas) which is
+disabled by default but can be selected with the `-fcanvas` flag.
 
 # Installation
 

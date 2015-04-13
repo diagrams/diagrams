@@ -10,7 +10,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      installed with a single @cabal install diagrams@
                      command.
                      .
-                     The package also comes with flags to enable five
+                     The package also comes with flags to enable six
                      different backends.
                      A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
@@ -42,11 +42,16 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      can be selected with the @-fpostscript@ flag.  The only
                      feature it does not support is transparency.
                      .
-                     Finally, there is a Rasterific backend which is
+                     There is a Rasterific backend which is
                      also Haskell-native (the @diagrams-rasterific@
                      package) which can be selected with the @-frasterific@
                      flag. This is a fully featured backend with the ability
                      to produce PNG, JPG, TIFF, BMP and animated GIF output.
+                     .
+                     Finally there is a Canvas backend, also haskell native,
+                     which can be selected with the @-fcanvas@ flag. This
+                     backend allows users to write interactive images onto
+                     their web browsers.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -101,6 +106,11 @@ Flag rasterific
   Default: False
   Manual: True
 
+Flag canvas
+  Description: Enable the Haskell-native Canvas backend
+  Default: False
+  Manual: True
+
 Library
   Build-depends:     diagrams-core >= 1.3 && < 1.4,
                      diagrams-lib >= 1.3 && < 1.4,
@@ -120,5 +130,8 @@ Library
 
   if flag(rasterific)
     Build-depends:   diagrams-rasterific >= 1.3 && < 1.4
+
+  if flag(canvas)
+    Build-depends:   diagrams-canvas >= 1.3 && < 1.4
 
   Default-language:  Haskell2010
