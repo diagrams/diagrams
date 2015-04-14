@@ -17,14 +17,14 @@ This package is just *a convenient wrapper* around the
 [diagrams-svg]: http://github.com/diagrams/diagrams-svg
 [diagrams-contrib]: http://github.com/diagrams/diagrams-contrib
 
-The package also comes with flags to enable six different backends.
+The package also comes with flags to enable seven different backends.
 The [native SVG backend](http://github.com/diagrams/diagrams-svg) is
 enabled by the `-fsvg` flag and is enabled by default.  If you don't
 want it, you must explicitly disable it with `-f-svg`.
 
 The
 [native postscript backend](http://github.com/diagrams/diagrams-postscript)
-is disabled by default but can be enabled by the `-fps` flag.
+is disabled by default but can be enabled by the `-fpostscript` flag.
 
 The [cairo backend](http://github.com/diagrams/diagrams-cairo) is
 disabled by default but can be selected with the `-fcairo` flag.  In
@@ -33,11 +33,14 @@ is based on the cairo backend (but split into a separate package to
 make installing the cairo backend easier).  It can be selected with
 the `fgtk` flag.
 
-The [native rasterific backend](http://github.com/diagrams/diagrams-rasterific) which is
+The [native rasterific backend](http://github.com/diagrams/diagrams-rasterific) is
 disabled by default but can be selected with the `-frasterific` flag.
 
-The [native canvas backend](http://github.com/diagrams/diagrams-canvas) which is
+The [native canvas backend](http://github.com/diagrams/diagrams-canvas) is
 disabled by default but can be selected with the `-fcanvas` flag.
+
+The [PGF backend](http://github.com/diagrams/diagrams-pgf) is disabled
+by default but can be selected with the `-fpgf` flag.
 
 # Installation
 
