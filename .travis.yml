@@ -9,7 +9,7 @@ env:
     - GHCVER=head CABALVER=head
   global:
     - UBUNTU_PKGS="libgtk-3-dev libcairo2-dev"
-    - HEAD_DEPS="monoid-extras active statestack diagrams-solve diagrams-core diagrams-lib diagrams-contrib diagrams-svg diagrams-postscript diagrams-cairo diagrams-gtk diagrams-rasterific diagrams-canvas diagrams-pgf"
+    - HEAD_DEPS="monoid-extras active statestack diagrams-solve diagrams-core diagrams-lib force-layout diagrams-contrib diagrams-svg diagrams-postscript diagrams-cairo diagrams-gtk diagrams-rasterific diagrams-canvas diagrams-pgf"
     - EXTRA_DEPS_PRE="gtk2hs-buildtools Cabal"
     - CABAL_FLAGS="-fsvg -fpostscript -fcairo -fgtk -frasterific -fcanvas -fpgf"
     - SKIP_HADDOCK=1
