@@ -10,7 +10,7 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      installed with a single @cabal install diagrams@
                      command.
                      .
-                     The package also comes with flags to enable seven
+                     The package also comes with flags to enable six
                      different backends.
                      A Haskell-native SVG
                      backend (the @diagrams-svg@ package)
@@ -48,18 +48,10 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      flag. This is a fully featured backend with the ability
                      to produce PNG, JPG, TIFF, BMP and animated GIF output.
                      .
-                     There is a Canvas backend, also haskell native,
+                     Finally there is a Canvas backend, also haskell native,
                      which can be selected with the @-fcanvas@ flag. This
                      backend allows users to write interactive images onto
                      their web browsers.
-                     .
-
-                     Finally, there is a PGF backend, which can be
-                     selected with the @-fpgf@ flag.  This backend
-                     generates PGF code suitable for including in a
-                     TeX document. The backend can also generate
-                     standalone .tex files which can be directly
-                     compiled to produce a PDF.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -119,11 +111,6 @@ Flag canvas
   Default: False
   Manual: True
 
-Flag pgf
-  Description: Enable the PGF backend
-  Default: False
-  Manual: True
-
 Library
   Build-depends:     diagrams-core >= 1.3 && < 1.4,
                      diagrams-lib >= 1.3 && < 1.4,
@@ -146,8 +133,5 @@ Library
 
   if flag(canvas)
     Build-depends:   diagrams-canvas >= 1.3 && < 1.4
-
-  if flag(pgf)
-    Build-depends:   diagrams-pgf >= 1.3 && < 1.4
 
   Default-language:  Haskell2010

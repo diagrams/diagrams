@@ -2,7 +2,6 @@
 --------------
 
 - Update to version 1.3 of everything
-- Add `diagrams-canvas`, `diagrams-pgf`
 
 1.2 (28 May 2014)
 ---------------------
