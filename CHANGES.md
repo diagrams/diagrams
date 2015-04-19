@@ -1,5 +1,5 @@
-1.3
---------------
+1.3 (19 April 2015)
+-------------------
 
 - Update to version 1.3 of everything
 - Add `diagrams-canvas` backend
