@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/diagrams/diagrams.png)](http://travis-ci.org/diagrams/diagrams)
+[![Build Status](http://gondor.hendrix.edu:8080/buildStatus/icon?job=Diagrams HEAD)](http://gondor.hendrix.edu:8080/job/Diagrams%20HEAD/)
 
 [diagrams] is a full-featured framework and domain-specific langauge
 (embedded in [Haskell]) for creating declarative vector graphics and
