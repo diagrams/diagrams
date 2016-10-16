@@ -1,7 +1,7 @@
-Copyright (c) 2011-2015, diagrams team (see LICENSE files in
+Copyright (c) 2011-2016, diagrams team (see LICENSE files in
 dual-tree, monoid-extras, diagrams-solve, active, statestack,
 diagrams-core, diagrams-lib, diagrams-svg, diagrams-postscript,
-diagrams-cairo, diagrams-gtk, diagrams-rasterific,
+diagrams-cairo, diagrams-gtk, diagrams-rasterific, diagrams-canvas,
 and diagrams-contrib packages)
 
 All rights reserved.
