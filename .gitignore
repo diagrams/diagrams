@@ -10,3 +10,6 @@ cabal-dev
 dist_*
 history
 TAGS
+
+stack.yaml
+.stack-work
