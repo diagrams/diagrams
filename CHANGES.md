@@ -1,3 +1,8 @@
+1.4 (XXX)
+---------
+
+- Update to version 1.4 of everything
+
 1.3.0.1 (18 Feb 2016)
 -------------------
 
