@@ -112,26 +112,26 @@ Flag canvas
   Manual: True
 
 Library
-  Build-depends:     diagrams-core >= 1.3 && < 1.4,
-                     diagrams-lib >= 1.3 && < 1.4,
-                     diagrams-contrib >= 1.3 && < 1.4
+  Build-depends:     diagrams-core >= 1.4 && < 1.5,
+                     diagrams-lib >= 1.4 && < 1.5,
+                     diagrams-contrib >= 1.4 && < 1.5
 
   if flag(cairo)
-    Build-depends:   diagrams-cairo >= 1.3 && < 1.4
+    Build-depends:   diagrams-cairo >= 1.4 && < 1.5
 
   if flag(gtk)
-    Build-depends:   diagrams-gtk >= 1.3 && < 1.4
+    Build-depends:   diagrams-gtk >= 1.4 && < 1.5
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 1.3 && < 1.5
+    Build-depends:   diagrams-svg >= 1.4 && < 1.5
 
   if flag(ps) || flag(postscript)
-    Build-depends:   diagrams-postscript >= 1.3 && < 1.4
+    Build-depends:   diagrams-postscript >= 1.4 && < 1.5
 
   if flag(rasterific)
-    Build-depends:   diagrams-rasterific >= 1.3 && < 1.4
+    Build-depends:   diagrams-rasterific >= 1.4 && < 1.5
 
   if flag(canvas)
-    Build-depends:   diagrams-canvas >= 1.3 && < 1.4
+    Build-depends:   diagrams-canvas >= 1.4 && < 1.5
 
   Default-language:  Haskell2010
