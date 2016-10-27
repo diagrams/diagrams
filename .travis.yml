@@ -5,7 +5,8 @@ env:
     - HPVER=2014.2.0.0 CABALVER=1.18
     - GHCVER=7.6.3 CABALVER=1.18
     - GHCVER=7.8.4 CABALVER=1.18
-    - GHCVER=7.10.1 CABALVER=1.22
+    - GHCVER=7.10.2 CABALVER=1.22
+    - GHCVER=8.0.1 CABALVER=1.24
     - GHCVER=head CABALVER=head
   global:
     - UBUNTU_PKGS="libgtk-3-dev libcairo2-dev"
