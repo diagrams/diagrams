@@ -1,5 +1,5 @@
-1.4 (XXX)
----------
+1.4 (26 Oct 2016)
+-----------------
 
 - Update to version 1.4 of everything
 
