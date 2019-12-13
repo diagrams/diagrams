@@ -126,7 +126,7 @@ Library
     Build-depends:   diagrams-svg >= 1.4 && < 1.5
 
   if flag(ps) || flag(postscript)
-    Build-depends:   diagrams-postscript >= 1.4 && < 1.5
+    Build-depends:   diagrams-postscript >= 1.4 && < 1.6
 
   if flag(rasterific)
     Build-depends:   diagrams-rasterific >= 1.4 && < 1.5
