@@ -56,11 +56,11 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
                      diagrams website:
-                     <http://projects.haskell.org/diagrams>.  For
+                     <http://diagrams.github.io>.  For
                      help, join the @#diagrams@ IRC channel on
                      Freenode or the mailing list:
                      <http://groups.google.com/group/diagrams-discuss>.
-Homepage:            http://projects.haskell.org/diagrams
+Homepage:            http://diagrams.github.io
 License:             BSD3
 License-file:        LICENSE
 Author:              Brent Yorgey
