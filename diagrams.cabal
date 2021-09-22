@@ -112,7 +112,7 @@ Flag canvas
   Manual: True
 
 Library
-  Build-depends:     diagrams-core >= 1.4 && < 1.5,
+  Build-depends:     diagrams-core >= 1.4 && < 1.6,
                      diagrams-lib >= 1.4 && < 1.5,
                      diagrams-contrib >= 1.4 && < 1.5
 
