@@ -1,3 +1,9 @@
+1.4.0.1 (2 Oct 2021)
+--------------------
+
+- Updates for GHC up to 9.0
+- Update URL of diagrams website
+
 1.4 (26 Oct 2016)
 -----------------
 
