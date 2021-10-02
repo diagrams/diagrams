@@ -56,7 +56,7 @@ jobs:
       - name: apt
         run: |
           apt-get update
-          apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git software-properties-common libtinfo5 libpango1.0-dev
+          apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git software-properties-common libtinfo5
           apt-add-repository -y 'ppa:hvr/ghc'
           apt-get update
           apt-get install -y "$HCNAME" cabal-install-3.4
@@ -154,7 +154,7 @@ jobs:
           echo "packages: ${PKGDIR_diagrams}" >> cabal.project
           echo "package diagrams" >> cabal.project
           echo "    ghc-options: -Werror=missing-methods" >> cabal.project
-          echo "    flags: +cairo +gtk +svg +ps +rasterific +canvas" >> cabal.project
+          echo "    flags: +svg +ps +rasterific +canvas" >> cabal.project
           cat >> cabal.project <<EOF
           EOF
           $HCPKG list --simple-output --names-only | perl -ne 'for (split /\s+/) { print "constraints: $_ installed\n" unless /^(diagrams)$/; }' >> cabal.project.local
