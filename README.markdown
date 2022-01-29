@@ -10,7 +10,7 @@ animations.
 This package is just *a convenient wrapper* around the
 [diagrams-core], [diagrams-lib], [diagrams-svg], and
 [diagrams-contrib] packages, so they can be installed with a single
-`cabal install diagrams` command.
+`cabal install --lib diagrams` command.
 
 [diagrams-core]: http://github.com/diagrams/diagrams-core
 [diagrams-lib]: http://github.com/diagrams/diagrams-lib
@@ -42,19 +42,19 @@ disabled by default but can be selected with the `-fcanvas` flag.
 # Installation
 
 ```
-cabal update && cabal install diagrams
+cabal update && cabal install --lib diagrams
 ```
 
 or, to get the postscript backend in addition to the SVG backend:
 
 ```
-cabal update && cabal install -fps diagrams
+cabal update && cabal install --lib -fps diagrams
 ```
 
 or, to get the cairo backend in addition to the SVG backend:
 
 ```
-cabal update && cabal install gtk2hs-buildtools && cabal install -fcairo diagrams
+cabal update && cabal install gtk2hs-buildtools && cabal install --lib -fcairo diagrams
 ```
 
 # Reporting bugs
