@@ -48,10 +48,14 @@ Description:         Diagrams is a full-featured framework and embedded domain-s
                      flag. This is a fully featured backend with the ability
                      to produce PNG, JPG, TIFF, BMP and animated GIF output.
                      .
-                     Finally there is a Canvas backend, also haskell native,
+                     There is a Canvas backend, also haskell native,
                      which can be selected with the @-fcanvas@ flag. This
                      backend allows users to write interactive images onto
                      their web browsers.
+                     .
+                     Finally there is a PGF backend, suitable for producing
+                     diagrams that can be natively embedded in LaTeX documents,
+                     which can be selected with the @-fpgf@ flag.
                      .
                      For more information, including a gallery of
                      examples, tutorial, and user manual, see the
@@ -111,6 +115,11 @@ Flag canvas
   Default: False
   Manual: True
 
+Flag pgf
+  Description: Enable the Haskell-native PGF backend
+  Default: False
+  Manual: True
+
 Library
   Build-depends:     diagrams-core >= 1.4 && < 1.6,
                      diagrams-lib >= 1.4 && < 1.5,
@@ -133,5 +142,8 @@ Library
 
   if flag(canvas)
     Build-depends:   diagrams-canvas >= 1.4 && < 1.5
+
+  if flag(pgf)
+    Build-depends:   diagrams-pgf >= 1.4 && < 1.5
 
   Default-language:  Haskell2010
