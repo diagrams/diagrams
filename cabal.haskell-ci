@@ -1,2 +1,4 @@
+apt: libgtk2.0-dev libcairo2-dev libpango1.0-dev
+
 raw-project
   flags: +cairo +gtk +svg +ps +rasterific +canvas +pgf
