@@ -73,7 +73,7 @@ Bug-reports:         http://github.com/diagrams/diagrams/issues
 Category:            Graphics
 Build-type:          Simple
 Cabal-version:       >=1.10
-tested-with:         GHC ==8.4.4 || ==8.6.5 || ==8.8.4 || ==8.10.4 || ==9.0.1
+tested-with:         GHC ==8.8.4 || ==8.10.7 || ==9.0.2 || ==9.2.7 || ==9.4.5 || ==9.6.1
 Extra-source-files:  README.markdown
 
 Source-repository head
