@@ -1,0 +1,2 @@
+raw-project
+  flags: +cairo +gtk +svg +ps +rasterific +canvas +pgf
