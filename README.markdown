@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml/badge.svg)](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml/badge.svg)
+[![Build Status](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml/badge.svg)](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml)
 
 [diagrams] is a full-featured framework and domain-specific language
 (embedded in [Haskell]) for creating declarative vector graphics and
