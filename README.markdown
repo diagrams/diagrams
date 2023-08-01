@@ -1,4 +1,4 @@
-[![Build Status](http://gondor.hendrix.edu:8080/buildStatus/icon?job=Diagrams HEAD)](http://gondor.hendrix.edu:8080/job/Diagrams%20HEAD/)
+[![Build Status](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml/badge.svg)](https://github.com/diagrams/diagrams/actions/workflows/haskell-ci.yml)
 
 [diagrams] is a full-featured framework and domain-specific language
 (embedded in [Haskell]) for creating declarative vector graphics and
