@@ -79,7 +79,7 @@ extra-doc-files:     CHANGES.md
 
 Source-repository head
   type:     git
-  location: git://github.com/diagrams/diagrams.git
+  location: http://github.com/diagrams/diagrams.git
 
 Flag cairo
   Description: Enable the cairo backend
