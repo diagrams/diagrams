@@ -13,3 +13,5 @@ TAGS
 
 stack.yaml
 .stack-work
+
+dist-newstyle
