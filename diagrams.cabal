@@ -123,7 +123,7 @@ Flag pgf
 
 Library
   Build-depends:     diagrams-core >= 1.4 && < 1.6,
-                     diagrams-lib >= 1.4 && < 1.5,
+                     diagrams-lib >= 1.4 && < 1.6,
                      diagrams-contrib >= 1.4 && < 1.5
 
   if flag(cairo)
@@ -133,7 +133,7 @@ Library
     Build-depends:   diagrams-gtk >= 1.4 && < 1.5
 
   if flag(svg)
-    Build-depends:   diagrams-svg >= 1.4 && < 1.5
+    Build-depends:   diagrams-svg >= 1.4 && < 1.6
 
   if flag(ps) || flag(postscript)
     Build-depends:   diagrams-postscript >= 1.4 && < 1.6
